@@ -322,6 +322,32 @@ header {
     margin-top: 12px;
     cursor: pointer;
 }
+#Banners-container1{
+    margin-top: 19px;
+    width: 770px;
+    flex-wrap: wrap;
+    display: flex;
+}
+#Banners-container1 img{
+    width: 217px;
+    border-radius: 5px;
+    margin-right:20px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+#Banners-container2{
+    margin-top: 19px;
+    width: 770px;
+    flex-wrap: wrap;
+    display: flex;
+}
+#Banners-container2 img{
+    width: 217px;
+    border-radius: 5px;
+    margin-right:20px;
+    margin-top: 12px;
+    cursor: pointer;
+}
 
 .Image-Name{
     position: relative;
@@ -443,6 +469,51 @@ header {
     width: 364px;
     border-radius: 10px;
 }
+#ImageOfNews1{
+    margin-top: 16px;
+    width: 364px;
+    position: relative;
+}
+#ImageOfNews1 img{
+    width: 364px;
+    border-radius: 10px;
+}
+#ImageOfNews2{
+    margin-top: 16px;
+    width: 364px;
+    position: relative;
+}
+#ImageOfNews2 img{
+    width: 364px;
+    border-radius: 10px;
+}
+#ImageOfNews3{
+    margin-top: 16px;
+    width: 364px;
+    position: relative;
+}
+#ImageOfNews3 img{
+    width: 364px;
+    border-radius: 10px;
+}
+#ImageOfNews4{
+    margin-top: 16px;
+    width: 364px;
+    position: relative;
+}
+#ImageOfNews4 img{
+    width: 364px;
+    border-radius: 10px;
+}
+#ImageOfNews5{
+    margin-top: 16px;
+    width: 364px;
+    position: relative;
+}
+#ImageOfNews5 img{
+    width: 364px;
+    border-radius: 10px;
+}
 
 .name{
     position: absolute;
@@ -503,6 +574,18 @@ header {
         width: 537px;
     }
     #Banners-container img{
+        width: 167px;
+    }
+    #Banners-container1{
+        width: 537px;
+    }
+    #Banners-container1 img{
+        width: 167px;
+    }
+    #Banners-container2{
+        width: 537px;
+    }
+    #Banners-container2 img{
         width: 167px;
     }
 
@@ -649,6 +732,12 @@ header {
         width: 140px;
     }
     #Heading-box{
+        font-size: 0.9em;
+    }
+    #Heading-box1{
+        font-size: 0.9em;
+    }
+    #Heading-box2{
         font-size: 0.9em;
     }
 
