@@ -5,7 +5,7 @@ if (localStorage.getItem('login')) {
 }
 
 
-//--------sign up--------
+// //--------sign up--------
 let usernameInput = document.querySelector('#username')
 let emailInput = document.querySelector('#email')
 let passwordInput = document.querySelector('#password1')
@@ -40,4 +40,23 @@ let submitForm = () => {
     }
 }
 
-submitBtn.addEventListener('click', submitForm)
+
+
+
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+
+
+
+
+
+// navbar
+
+Hamburger = document.querySelector(".hamburger");
+Hamburger.onclick = function() {
+    navBar = document.querySelector(".navbar");
+    navBar.classList.toggle("active");
+}
