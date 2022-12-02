@@ -60,3 +60,19 @@ Hamburger.onclick = function() {
     navBar = document.querySelector(".navbar");
     navBar.classList.toggle("active");
 }
+
+
+// API
+
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '77ea0dd80cmshf8e57cd5ad5566bp1788fdjsnba04bf0be5e1',
+		'X-RapidAPI-Host': 'anime-db.p.rapidapi.com'
+	}
+};
+
+fetch('https://anime-db.p.rapidapi.com/anime?page=1&size=10&search=One%20piece&genres=Adventure%20action&sortBy=ranking&sortOrder=asc', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
