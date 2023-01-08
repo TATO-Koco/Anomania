@@ -3,6 +3,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 a{
@@ -15,7 +17,120 @@ body{
     width: 100vw;
 }
 
+/* validation form */
 
+.background{
+    background: #0b0c2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0,0,0,0.048), 0 12.8px 10.5px rgba(0,0,0,0.58) ;
+    width: 550px;
+    max-width: 100%;
+}
+
+.header{
+    background-color: #090d46;
+    padding: 30px 0;
+}
+
+.header h2{
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form{
+    padding: 40px;
+}
+
+.form-control{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 12px;
+    display: block;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input{
+    border-color: #39df7e;
+}
+
+.form-control.error input{
+    border-color: #df3434;
+}
+
+.form-control i {
+    position: absolute;
+    right: 12px;
+    top: 40px;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.form-control small{
+    color: #df3434;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle{
+    color: #39df7e;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #df3434;
+    visibility: visible;
+}
+
+.form .btn{
+    background: #040622;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 15px;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form .btn:hover{
+    background: #c59cd8;
+}
+/* validation form */
 
 /* Other tools section */
 ::selection{
@@ -123,7 +238,7 @@ header {
         opacity: 0;
     }
     .navbar.active ul {
-        opacity: 100%;
+        opacity: 1;
     }
     .navbar ul li a {
         margin-bottom: 12px;
@@ -135,85 +250,7 @@ header {
 
 
 
- /* Slide section */
-.slides-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.slider{
-  width: 1134px;
-  height: 500px;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.slides{
-  width: 500%;
-  height: 500px;
-  display: flex;
-  
-}
-
-.slides input{
-  display: none;
-}
-
-.slide{
-  width: 20%;
-  transition: 2s;
-  
-}
-
-.slide img{
-  width: 1245px;
-  height: 500px;
-}
-
-.first{
-    animation-name: slide;
-    animation-iteration-count: infinite;
-    animation-duration: 25s;
-    background: url('./image/nauto banner.jpg') ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-}
-.second{
-    background: url('./image/fate long banner.png') ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center
-}
-@keyframes slide {
-    0%{
-        margin-left: 0;
-    }
-    16%{
-        margin-left: 0;
-    }
-    32%{
-        margin-left: -20%;
-    }
-    48%{
-        margin-left: -20%;
-    }
-    64%{
-        margin-left: -40%;
-    }
-    80%{
-        margin-left: -40%;
-    }
-    100%{
-        margin-left: 0;
-    }
-} 
-/* Slide section */
+ 
 
 
 
@@ -337,12 +374,13 @@ header {
 }
 #Banners-container2{
     margin-top: 19px;
-    width: 770px;
+    width: 100%;
+    max-width: 770px;
     flex-wrap: wrap;
     display: flex;
 }
 #Banners-container2 img{
-    width: 217px;
+    max-width: 217px;
     border-radius: 5px;
     margin-right:20px;
     margin-top: 12px;
@@ -549,12 +587,6 @@ header {
 /* responsive */
 
 @media only screen and (max-width:1132px) {
-
-    .slider{
-        width: 860px;
-    }
-
-
     #contentBanners{
         width: 537px;
         flex-wrap: wrap;
@@ -632,14 +664,6 @@ header {
         display: none;
     }
 
-    .slider{
-        width: 700px;
-    }
-    .slider img{
-        width: 621px;
-        height: 307px;
-    }
-
     #contentBanners{
         width: 700px;
         flex-wrap: wrap;
@@ -665,9 +689,6 @@ header {
 }
 
 @media only screen and  (max-width:730px){
-    .slider{
-        width: 540px;
-    }
     .search{
         right: 49px;
     }
@@ -680,10 +701,6 @@ header {
     }
 }
 @media only screen and  (max-width:550px){
-    .slider{
-        width: 380px;
-        height: 400px;
-    }
     .search{
         right: 16px;
     }
@@ -704,10 +721,6 @@ header {
     }
 }
 @media only screen and  (max-width:400px){
-    .slider{
-        width: 290px;
-        height: 250px;
-    }
     #other-opt{
         display: none;
     }
@@ -792,87 +805,4 @@ header {
     .viewAllInNews{
         max-width: 83px;
     }
-}
-
-/* Registration form*/
-
-
-.backgroundregistration{
-        background-image: linear-gradient(rgba(0, 0, 0, 1.0),rgba(0, 0, 0, 0.1));
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-blend-mode: darken;
-        opacity: 0.98;
-        height: 100vh;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Ubuntu', sans-serif;
-}
-.container{
-    background-color: white;
-    border-radius: 7px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 437px;
-    max-width: 100%;
-}
-.header{
-    text-align: center;
-    padding: 20px;
-    background-color: #c7bfbf;
-}
-.header h2{
-    margin: 0;
-    font-size: 30px;
-}
-.main-form{
-    padding: 30px 40px;
-}
-.form{
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-    position: relative;
-}
-.form input{
-    border: 2px solid #f0f0f0;
-    border-radius: 4px;
-    font-family: inherit;
-    width: 100%;
-    padding: 12px;
-    display: block;
-    font-size: 14px;
-}
-.form i{
-    position: absolute;
-    top: 32px;
-    right: 10px;
-    visibility: hidden;
-
-}
-.form small{
-    position: absolute;
-    bottom: 0;
-    left: 5px;
-    visibility: hidden;
-
-}
-button{
-    width: 100%;
-    font-family: inherit;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 7px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    color: white;
-    background-color: #655c59;
-    outline: none;
-}
-button:hover{
-    background-color: black;
-    color: white;
 }

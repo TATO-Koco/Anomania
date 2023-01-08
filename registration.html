@@ -1,59 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-	<title>Sign Up</title>
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-	<link rel="icon" type="x-icon" href="image/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+        
+    <link rel="stylesheet" type="text/css" href="style.css">  
 </head>
 <body>
-<div class="backgroundregistration">
-	<div class="container">
-		<div class="header">
-			<h2>Sign Up</h2>
-			<div><i style='font-size:24px' class='fas'>&#xf2bd;</i></div>
-		</div>
-			<form class="main-form">
-				<div class="form">
-					<label for="">Username</label>
-					<input type="text" placeholder="Enter your username" id="username">
-					<i class="fas sucess">&#xf058;</i>
-					<i class="fas error">&#xf06a;</i>
-					<small class="message">error message</small>
+	<section>
+		<div class="background">
+			<div class="container">
+				<div class="header">
+					<h2>Sign Up Form</h2>
 				</div>
-				<div class="form">
-					<label for="">Email</label>
-					<input type="email" placeholder="Enter your valid email" id="email">
-					<i class="fas sucess">&#xf058;</i>
-					<i class="fas error">&#xf06a;</i>
-					<small class="message">error message</small>
-				</div>
-				<div class="form">
-					<label for="">Password</label>
-					<input type="password" placeholder="Enter your password" id="password1">
-					<i class="fas sucess">&#xf058;</i>
-					<i class="fas error">&#xf06a;</i>
-					<small class="message">error message</small>
-				</div>
-				<div class="form">
-					<label for="">Password check</label>
-					<input type="password" placeholder="Please re-enter your password" id="password2">
-					<i class="fas sucess">&#xf058;</i>
-					<i class="fas error">&#xf06a;</i>
-					<small class="message">error message</small>
-				</div>
-				<button id="submitbtn" type="button">submit</button>
 
-					
-			</form>
-		
-	</div>
-</div>
-</body>
+				<form action="" class="Formi" id="Formi">
+					<div class="form-control">
+						<label>First Name</label>
+						<input type="text" name="" id="username" placeholder="Enter Your First Name" autocomplete="off">
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error Message</small>
+					</div>
+
+					<div class="form-control">
+						<label>Last Name</label>
+						<input type="text" name="" id="lastname" placeholder="Enter Your Last Name" autocomplete="off" >
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error Message</small>
+					</div>
+
+					<div class="form-control">
+						<label>Email</label>
+						<input type="text" name="" id="email" placeholder="Enter Your Email" autocomplete="off">
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error Message</small>
+					</div>
+
+					<div class="form-control">
+						<label>Password</label>
+						<input type="password" name="" id="password" placeholder="Enter Your Password" autocomplete="off">
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error Message</small>
+					</div>
+
+					<div class="form-control">
+						<label>Confirm Password</label>
+						<input type="password" name="" id="cpassword" placeholder="Confirm Password" autocomplete="off">
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error Message</small>
+					</div>
+					<input type="submit" value="Submit" class="btn">
+				</form>
+			</div>
+		</div>
+	</section>	
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 	<script src="script.js"></script>
+
+</body>
 </html>
